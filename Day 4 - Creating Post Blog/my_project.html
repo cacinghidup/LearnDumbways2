@@ -1,0 +1,186 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/my_project.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <title>Batch 45</title>
+    </head>
+    <body>
+        <nav>
+            <div class="nav-left">
+                <ul>
+                    <div id="logo">
+                        <li>
+                            <a href="https://dumbways.id/">
+                                <img id="linkDumbways" src="assets/image/dumbwaysLogo.png" alt="dumbwaysLogo">
+                            </a>
+                        </li>
+                    </div>
+                    <div id="home">
+                        <a id="linkHome" href="index.html">
+                            <li>Home</li>
+                        </a>
+                    </div>
+                    <div id="project">
+                        <a id="projectDetail" href="my_project.html">
+                            <li>My Project</li>
+                        </a>
+                    </div>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="contact_form.html">
+                        <button type="button">
+                            Contact Me
+                        </button>
+                </a>
+            </div>
+        </nav>
+        <div class="isiForm">
+            <div>
+                <h1 style="font-weight: bold; font-size: 45px;">ADD MY PROJECT</h1>
+            </div>
+            <div class="formProject">
+                <form action="" autocomplete="off">
+                    <div>
+                        <label for="project">Project Name</label>
+                        <div>
+                            <input id="namaProject" type="text">
+                        </div>
+                    </div>
+        
+                    <div>
+                        <div class="tglProject">
+                            <div style="margin-right: 5px;">
+                                <label for="tglMulai">Start Date</label>
+                                <div>
+                                    <input id="tglMulai" type="text" style="width:250px">
+                                </div>
+                            </div>
+                            <div style="margin-left: 5px;">
+                                <label for="tglAkhir">End Date</label>
+                                <div>
+                                    <input id="tglAkhir" type="text" style="width:250px">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+        
+                    <div>
+                        <label for="deskripsi">Description</label>
+                        <div>
+                            <textarea id="deskripsi" cols="50" rows="10"
+                            ></textarea>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="tecnologies">Technologies</label>
+                            <div>
+                                <form action="">
+                                    <input type="checkbox" id="nodeJs" style="width: auto;"><label for="nodeJs">Node Js</label>
+                                    <input type="checkbox" id="nextJs" style="width:auto; margin-left: 99px;"><label for="nextJs">Next Js</label><br>
+                                    <input type="checkbox" id="reactJs" style="width: auto;"><label for="reactJs">React Js</label>
+                                    <input type="checkbox" id="typeScript" style="width: auto; margin-left: 98px;"><label for="typeScript">Type Script</label><br>
+                                </form>
+                            </div>
+                    </div>
+
+                    <div>
+                        <form action="">
+                            <div>
+                                Upload Image
+                            </div>
+                            <div>
+                            <table style="width: 25%; background-color: white; border: 1px solid black; border-collapse: collapse;">
+                                <tr>
+                                    <th style="float: left;">
+                                        <input type="file" id="inputFile">
+                                    </th>
+                                </tr>
+                            </table>
+                            </div>
+                        </form>
+                    </div>
+                           
+                    <div class="buttonSubmit">
+                            <button type="button" onclick="getData(event)">
+                                Submit here
+                            </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="myProject">
+            <div>
+                <h1> MY PROJECT </h1>
+            </div>    
+            <div class="indexHome">
+                <div id="indexHome1">
+                    <div id="indexHome2">
+                        <!-- Dynamic Content -->
+                        <div id="isiMyProject">
+                            <img src="assets/image/osd-android-1.png" alt="Project">
+                            <a href="my_project_detail.html" style="text-decoration: none;">
+                                <h2>
+                                    Android Mobile Application
+                                </h2>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in molestie nulla. Donec tincidunt nulla nec ante vestibulum convallis.
+                            </p>
+                            <div class="logoCode">
+                                <div>
+                                    <i class="fa-brands fa-android fa-2x"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-java fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="editProject">
+                                <div>
+                                    <button type="submit" style="margin: 20px 15px;">Edit</button>
+                                </div>
+                                <div>
+                                    <button type="submit" style="margin: 20px 15px;">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Dummy Buat Tambahan -->
+                        <!-- <div id="isiMyProject">
+                            <img src="assets/image/osd-android-1.png" alt="Project">
+                            <a href="my_project_detail.html" style="text-decoration: none;">
+                                <h2>
+                                    Android Mobile Application
+                                </h2>
+                            </a>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in molestie nulla. Donec tincidunt nulla nec ante vestibulum convallis.
+                            </p>
+                            <div class="logoCode">
+                                <div>
+                                    <i class="fa-brands fa-android fa-2x"></i>
+                                </div>
+                                <div>
+                                    <i class="fa-brands fa-java fa-2x"></i>
+                                </div>
+                            </div>
+                            <div class="editProject">
+                                <div>
+                                    <button type="submit" style="margin: 20px 15px;">Edit</button>
+                                </div>
+                                <div>
+                                    <button type="submit" style="margin: 20px 15px;">Delete</button>
+                                </div>
+                            </div>
+                        </div> -->
+                    
+                    </div>
+                </div>
+            </div> 
+            <br><br><br>
+        </div>
+    </body>
+    <script src="assets/js/my_project.js"></script>
+</html>
