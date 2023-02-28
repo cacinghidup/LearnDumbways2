@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(228, 225, 225);
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(245, 243, 243);
+    border-radius: 20px;
+}
+
+.nav-left{
+    flex: 50%;;
+}
+
+.nav-left ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-left ul li{
+    margin-right: 55px;
+    font-size: 20px;
+}
+
+.nav-left #home,#project{
+    list-style-type: none;
+    display: flex;
+    margin-top: 20px;
+}
+
+.nav-left #linkHome{
+    text-decoration: none;
+    color: black;
+}
+
+.nav-left #linkDumbways{
+    float: left;
+    width: 90px;
+    height: 65px;
+}
+
+
+.nav-right{
+    flex: 50%;
+    text-align: right;
+    margin-right: 60px;
+}
+
+.nav-right button{
+    padding: 10px 30px;
+    border-radius: 15px;
+    border-style: hidden;
+    box-shadow: 0px 0px 5px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: default;
+}
+
+.isiForm{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+    height: auto;
+}
+
+.isiForm div h1{
+    font-size: 45px;
+}
+
+form div{
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+form #address{
+    resize: none;
+    word-wrap: break-word;
+}
+
+input,select,textarea {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    width: 500px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.buttonSubmit{
+   float: right;
+   margin-top: 20px;
+}
+
+button{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: rgb(135, 135, 233);
+    box-shadow: 0px 0px 5px;
+    border: 1px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
