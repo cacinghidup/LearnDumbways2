@@ -2,7 +2,7 @@
     <head>
         <link rel="stylesheet" href="assets/css/my_project_detail.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Batch 45</title>
     </head>
     <body>
@@ -32,8 +32,24 @@
                             Contact Me
                         </button>
                 </a>
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
             </div>
         </nav>
+        <!-- Hamburger Item -->
+        <div id="targetHamburger" class="hamburger-menu-item">
+            <a id="hamLink" href="index.html">
+                <div class="hamburger-item">Home</div>
+            </a>
+            <a id="hamLink" href="my_project.html">
+                <div class="hamburger-item" style="background-color: orange;">My Project</div>
+            </a>
+            <a id="hamLink" href="contact_form.html">
+                <div class="hamburger-item">Contact Me</div>
+            </a>
+        </div>
         <div class="judulProject">
             <h1>
                 Android Mobile Application
@@ -46,21 +62,29 @@
                 </div>
                 <div class="durationDetail">
                     <div class="durationProject">
-                        <p> Duration </p>
-                        <div style="margin-bottom: 10px;">
-                            <i class="fa-solid fa-calendar-days fa-3x"><P style="font-size: small;">14 Jan 2023 - 28 Feb 2023 </P> </i>
+                        <p style="font-size: 25px; margin: 0px; float: left; display: flex;"> Duration </p>
+                        <div>
+                            <i class="fa-solid fa-calendar-days fa-2x"><P style="font-size: small;">14 Jan 2023 - 28 Feb 2023 </P> </i>
                         </div>
-                        <div style="margin-top: 10px;">
-                            <i class="fa-regular fa-clock fa-3x"><p style="font-size: small;"> 1 Month 14 Days</p></i>
+                        <div>
+                            <i class="fa-regular fa-clock fa-2x"><p style="font-size: small;"> 1 Month 14 Days</p></i>
                         </div>
                     </div>
-                    <div class="technologies">
-                        <p>Technologies</p>
-                        <div>
-                            <i class="fa-brands fa-android fa-3x"><p style="font-size: small; margin-top: 0px;">Android Studio</p></i>
-                        </div>
-                        <div>
-                            <i class="fa-brands fa-java fa-3x"><p style="font-size: small; margin-top: 10px;">Java</p></i>
+                    <div class="inTechno" style="width: 200px; display: flex; flex-direction: column;">
+                        <p style="font-size: 25px; margin: 0px;">Technologies</p>
+                        <div class="technologies">
+                            <div>
+                                <img src="https://img.icons8.com/ios/128/null/react-native--v1.png"/><p style="font-size: medium; margin: 0px;">React JS</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/color/128/null/javascript--v1.png"/><p style="font-size: medium; margin: 0px;"> JavaScript</p>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/fluency/48/null/node-js.png"/><p style="font-size: medium; margin: 0px;">Node JS</p></i>
+                            </div>
+                            <div>
+                                <img src="https://img.icons8.com/fluency/128/null/typescript--v2.png"><p style="font-size: medium; margin: 0px;">TypeScript</p></img>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -75,5 +99,6 @@
                     Nullam faucibus finibus neque, nec egestas enim mattis sit amet. Etiam faucibus diam ultrices ante varius venenatis. Cras eu nulla vel turpis eleifend sagittis nec sit amet lectus. Sed scelerisque elementum diam, ac venenatis erat interdum id. Vestibulum sit amet elit mi. Morbi commodo diam a lectus interdum, nec pellentesque sem vulputate. Donec non pulvinar orci, a pretium lorem. Vestibulum et sapien mi. Curabitur pharetra vestibulum erat, quis tempus odio porttitor non. Curabitur quis congue risus. Aliquam hendrerit, lorem et fermentum finibus, justo felis bibendum velit, nec aliquam sem est at eros.
                 </p>
             </div>
+        <script src="assets/js/hamburger_menu.js"></script>
     </body>
 </html>

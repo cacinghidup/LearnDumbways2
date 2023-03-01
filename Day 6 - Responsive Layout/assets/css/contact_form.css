@@ -19,17 +19,27 @@ nav{
 .nav-left ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    padding-inline-start: 20px;
 }
 
-.nav-left ul li{
-    margin-right: 55px;
+.nav-left ul div{
+    margin: 0px 15px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.nav-left #home,#project{
+/* .nav-left #home,#project{
     list-style-type: none;
     display: flex;
     margin-top: 20px;
+    align-items: center;
+} */
+
+.nav-left #projectDetail {
+    text-decoration: none;
+    color: black;
 }
 
 .nav-left #linkHome{
@@ -45,19 +55,54 @@ nav{
 
 
 .nav-right{
+    display: flex;
+    justify-content: flex-end;
     flex: 50%;
-    text-align: right;
-    margin-right: 60px;
+    align-items: center;
 }
 
-.nav-right button{
-    padding: 10px 30px;
+.nav-right button {
+    padding: 10px 20px;
+    margin: 0px 15px;
     border-radius: 15px;
     border-style: hidden;
     box-shadow: 0px 0px 5px;
-    font-weight: bold;
+    background-color: rgb(135, 135, 223);
+    cursor: pointer;
+}
+
+.nav-right button a{
+    text-decoration: none;
+    color: black;
     font-size: 15px;
-    cursor: default;
+}
+
+.hamburger-menu{
+    display: none;
+    margin: 0px 15px;
+}
+
+#targetHamburger {
+    margin: 10px 5px;
+}
+
+.hamburger-menu-item{
+    display: none;
+}
+
+#hamLink{
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-item {
+    display: flex;
+    background-color: rgb(208,207,207);
+    border: 1px solid white;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px 15px;
 }
 
 .isiForm{
@@ -87,7 +132,7 @@ input,select,textarea {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    width: 100%;
+    /* width: 100%; */
     width: 500px;
     padding: 4px;
     border-radius: 5px;
@@ -107,4 +152,22 @@ button{
     font-weight: bold;
     font-size: 15px;
     cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Aturan CSS untuk layar dengan lebar maksimal 768 piksel */
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #home, #project, .nav-right button {
+        display: none;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+
 }
