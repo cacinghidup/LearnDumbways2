@@ -19,26 +19,30 @@ nav{
 .nav-left ul {
     list-style-type: none;
     display: flex;
+    flex-direction: row;
+    padding-inline-start: 20px;
 }
 
-.nav-left ul li{
-    margin-right: 55px;
+.nav-left ul div{
+    margin: 0px 15px;
     font-size: 20px;
+    display: flex;
+    align-items: center;
 }
 
-.nav-left #home,#project{
+/* .nav-left #home,#project{
     list-style-type: none;
     display: flex;
     margin-top: 20px;
-}
+    align-items: center;
+} */
 
 .nav-left #projectDetail {
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 
-.nav-left #linkHome {
+.nav-left #linkHome{
     text-decoration: none;
     color: black;
 }
@@ -51,13 +55,15 @@ nav{
 
 
 .nav-right{
+    display: flex;
+    justify-content: flex-end;
     flex: 50%;
-    text-align: right;
-    margin-right: 60px;
+    align-items: center;
 }
 
 .nav-right button {
-    padding: 10px 30px;
+    padding: 10px 20px;
+    margin: 0px 15px;
     border-radius: 15px;
     border-style: hidden;
     box-shadow: 0px 0px 5px;
@@ -65,7 +71,7 @@ nav{
     cursor: pointer;
 }
 
-.nav-right a button{
+.nav-right button a{
     text-decoration: none;
     color: black;
     font-size: 15px;
@@ -202,3 +208,46 @@ button{
     box-shadow: 0px 0px 3px;
     margin-top: 10px;
 }
+
+.hamburger-menu{
+    display: none;
+    margin: 0px 15px;
+}
+
+#targetHamburger {
+    margin: 10px 5px;
+}
+
+.hamburger-menu-item{
+    display: none;
+}
+
+#hamLink{
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger-item {
+    display: flex;
+    background-color: rgb(208, 207, 207);
+    border: 1px solid white;
+    justify-content: center;
+    border-radius: 5px;
+    font-size: large;
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    /* Aturan CSS untuk layar dengan lebar maksimal 768 piksel */
+
+    .hamburger-menu {
+        display: flex;
+        cursor: pointer;
+    }
+
+    #home, #project, .nav-right a button {
+        display: none;
+    }
+}
+
+

@@ -2,6 +2,7 @@
     <head>
         <link rel="stylesheet" href="assets/css/my_project.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Batch 45</title>
     </head>
     <body>
@@ -33,8 +34,24 @@
                             Contact Me
                         </button>
                 </a>
+                <!-- Hamburger Menu -->
+                <div class="hamburger-menu" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars fa-2x"></i>
+                </div>
             </div>
         </nav>
+        <!-- Hamburger Item -->
+        <div id="targetHamburger" class="hamburger-menu-item">
+            <a id="hamLink" href="index.html">
+                <div class="hamburger-item">Home</div>
+            </a>
+            <a id="hamLink" href="my_project.html">
+                <div class="hamburger-item" style="background-color: orange;">My Project</div>
+            </a>
+            <a id="hamLink" href="contact_form.html">
+                <div class="hamburger-item">Contact Me</div>
+            </a>
+        </div>
         <!-- <form> -->
             <div class="isiForm">
                 <div>
@@ -183,6 +200,7 @@
             </div> 
             <br><br><br>
         </div>
+        <script src="assets/js/my_project.js"></script>
+        <script src="assets/js/hamburger_menu.js"></script>
     </body>
-    <script src="assets/js/my_project.js"></script>
 </html>
